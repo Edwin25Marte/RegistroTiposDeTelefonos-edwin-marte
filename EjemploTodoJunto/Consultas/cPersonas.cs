@@ -21,7 +21,6 @@ namespace Formulario.Consultas
         {
             if (FiltrarcomboBox.SelectedIndex == 0)
             {
-                //ponerlo en una funcion
                 int id = 0;
                 int.TryParse(CriteriotextBox.Text, out id);
 
