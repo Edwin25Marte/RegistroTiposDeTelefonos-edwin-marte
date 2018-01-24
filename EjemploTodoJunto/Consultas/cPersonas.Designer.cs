@@ -42,7 +42,7 @@
             // 
             this.PersonasdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PersonasdataGridView.Location = new System.Drawing.Point(17, 67);
-            this.PersonasdataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PersonasdataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.PersonasdataGridView.Name = "PersonasdataGridView";
             this.PersonasdataGridView.RowTemplate.Height = 24;
             this.PersonasdataGridView.Size = new System.Drawing.Size(396, 206);
@@ -51,7 +51,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(17, 279);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 54);
             this.button1.TabIndex = 16;
@@ -61,7 +61,7 @@
             // Buscarbutton
             // 
             this.Buscarbutton.Location = new System.Drawing.Point(327, 8);
-            this.Buscarbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Buscarbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(86, 54);
             this.Buscarbutton.TabIndex = 17;
@@ -73,12 +73,16 @@
             // 
             this.FiltrarcomboBox.FormattingEnabled = true;
             this.FiltrarcomboBox.Items.AddRange(new object[] {
+            "Inscripcion Id",
             "Nombres",
+            "Estudiante Id",
             "Monto",
             "Balance",
-            "Observaciones"});
+            "Observaciones",
+            "Tipo Id",
+            "Descripcion"});
             this.FiltrarcomboBox.Location = new System.Drawing.Point(17, 43);
-            this.FiltrarcomboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FiltrarcomboBox.Margin = new System.Windows.Forms.Padding(2);
             this.FiltrarcomboBox.Name = "FiltrarcomboBox";
             this.FiltrarcomboBox.Size = new System.Drawing.Size(92, 21);
             this.FiltrarcomboBox.TabIndex = 18;
@@ -86,7 +90,7 @@
             // CriteriotextBox
             // 
             this.CriteriotextBox.Location = new System.Drawing.Point(112, 43);
-            this.CriteriotextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CriteriotextBox.Margin = new System.Windows.Forms.Padding(2);
             this.CriteriotextBox.Name = "CriteriotextBox";
             this.CriteriotextBox.Size = new System.Drawing.Size(211, 20);
             this.CriteriotextBox.TabIndex = 19;
@@ -123,9 +127,10 @@
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.PersonasdataGridView);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "cPersonas";
-            this.Text = "Consulta de Personas";
+            this.Text = "Consulta de Estudiantes";
+            this.Load += new System.EventHandler(this.cPersonas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PersonasdataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

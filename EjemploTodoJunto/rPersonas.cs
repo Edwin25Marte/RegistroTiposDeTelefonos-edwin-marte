@@ -21,12 +21,14 @@ namespace Formulario
         {
             Personas p = new Personas();
 
-            p.InscripcionID = 0;
-            p.PersonaId = 0;
+            p.InscripcionID = int.Parse(InscIdTextBox.Text);
+            p.EstudianteId = int.Parse(EstIdTextBox.Text);
             p.Nombre = NombrestextBox.Text;
             p.Monto = int.Parse(MontotextBox.Text);
             p.Balance = int.Parse(BalancetextBox.Text);
             p.Observaciones = ObservacionestextBox.Text;
+            p.TipoId = int.Parse(TId.Text);
+            p.TelDescript = Descript.Text;
             return p;
         }
 
@@ -35,7 +37,7 @@ namespace Formulario
             Personas persona = LlenaClase();
 
             if (PersonasBll.Guardar(persona))
-                MessageBox.Show("Ha ingresado una persona!");
+                MessageBox.Show("Ha ingresado un Estudiante!");
 
         }
 

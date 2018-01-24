@@ -34,13 +34,12 @@ namespace Formulario.Consultas
 
                 PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Nombre == s);
             }
-
             if (FiltrarcomboBox.SelectedIndex == 2)
             {
-                
-                String s = CriteriotextBox.Text;
+                int esId = 0;
+                int.TryParse(CriteriotextBox.Text, out esId);
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Nombre == s);
+                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.EstudianteId == esId);
             }
 
             if (FiltrarcomboBox.SelectedIndex == 3)
@@ -58,16 +57,34 @@ namespace Formulario.Consultas
                 int balance = 0;
                 int.TryParse(CriteriotextBox.Text, out balance);
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Monto == balance);
+                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Balance == balance);
             }
 
             if (FiltrarcomboBox.SelectedIndex == 5)
             {
-                
-                String s = CriteriotextBox.Text;
+                String Obser = CriteriotextBox.Text;
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Observaciones == s);
+                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Observaciones == Obser);
             }
+            if (FiltrarcomboBox.SelectedIndex == 6)
+            {
+                int Tid = 0;
+                int.Parse(CriteriotextBox.Text);
+
+                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.TipoId == Tid);
+            }
+            if (FiltrarcomboBox.SelectedIndex == 7)
+            {
+
+                String des = CriteriotextBox.Text;
+
+                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.TelDescript == des);
+            }
+        }
+
+        private void cPersonas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

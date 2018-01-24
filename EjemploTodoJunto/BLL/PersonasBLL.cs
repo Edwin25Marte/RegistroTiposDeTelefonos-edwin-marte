@@ -9,11 +9,6 @@ namespace Formulario.BLL
 {
     public class PersonasBll
     {
-        /// <summary>
-        /// Permite guardar una persona en la base de datos
-        /// </summary>
-        /// <param name="persona">La instancia de persona</param>
-        /// <returns></returns>
         public static bool Guardar(Personas persona)
         {
             bool paso = false;
