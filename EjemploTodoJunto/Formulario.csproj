@@ -72,6 +72,12 @@
     <Compile Include="Consultas\cPersonas.Designer.cs">
       <DependentUpon>cPersonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultas\cTel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\cTel.Designer.cs">
+      <DependentUpon>cTel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\tTelefonos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,7 @@
       <DependentUpon>tTelefonos.cs</DependentUpon>
     </Compile>
     <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entidades\Reg_Tipos.cs" />
     <Compile Include="rPersonas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +97,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Consultas\cPersonas.resx">
       <DependentUpon>cPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\cTel.resx">
+      <DependentUpon>cTel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\tTelefonos.resx">
       <DependentUpon>tTelefonos.cs</DependentUpon>

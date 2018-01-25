@@ -1,4 +1,5 @@
-﻿using Formulario.BLL;
+﻿using EjemploTodoJunto.Consultas;
+using Formulario.BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,8 +28,8 @@ namespace Formulario
             p.Monto = int.Parse(MontotextBox.Text);
             p.Balance = int.Parse(BalancetextBox.Text);
             p.Observaciones = ObservacionestextBox.Text;
-            p.TipoId = int.Parse(TId.Text);
-            p.TelDescript = Descript.Text;
+           // p.TipoId = int.Parse(TId.Text);
+           // p.TelDescript = Descript.Text;
             return p;
         }
 
@@ -51,6 +52,12 @@ namespace Formulario
         private void rPersonas_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tTelefonos cet = new tTelefonos();
+            cet.Show();
         }
     }
 }
