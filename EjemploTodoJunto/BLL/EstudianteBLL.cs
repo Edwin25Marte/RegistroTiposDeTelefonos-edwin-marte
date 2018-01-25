@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Formulario.BLL
 {
-    public class PersonasBll
+    public class EstudianteBll
     {
-        public static bool Guardar(Personas persona)
+        public static bool Guardar(Estudiante persona)
         {
             bool paso = false;
 
@@ -30,7 +30,7 @@ namespace Formulario.BLL
             return paso;
         }
 
-        public static bool Modificar(Personas persona)
+        public static bool Modificar(Estudiante persona)
         {
             bool paso = false;
 
@@ -75,9 +75,9 @@ namespace Formulario.BLL
             return paso;
         }
 
-        public static Personas Buscar(int personaId)
+        public static Estudiante Buscar(int personaId)
         {
-            Personas persona = new Personas();
+            Estudiante persona = new Estudiante();
 
             try
             {
@@ -92,9 +92,9 @@ namespace Formulario.BLL
             return persona;
         }
 
-        public static List<Personas> GetList (Expression<Func<Personas, bool>> criterioBusqueda)
+        public static List<Estudiante> GetList (Expression<Func<Estudiante, bool>> criterioBusqueda)
         {
-            List<Personas> personas = new List<Personas>();
+            List<Estudiante> personas = new List<Estudiante>();
             try
             {
                 Contexto contex = new Contexto();

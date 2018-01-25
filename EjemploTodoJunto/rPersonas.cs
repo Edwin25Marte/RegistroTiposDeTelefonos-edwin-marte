@@ -17,9 +17,9 @@ namespace Formulario
             InitializeComponent();
         }
 
-        private Personas LlenaClase()
+        private Estudiante LlenaClase()
         {
-            Personas p = new Personas();
+            Estudiante p = new Estudiante();
 
             p.InscripcionID = int.Parse(InscIdTextBox.Text);
             p.EstudianteId = int.Parse(EstIdTextBox.Text);
@@ -34,9 +34,9 @@ namespace Formulario
 
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
-            Personas persona = LlenaClase();
+            Estudiante persona = LlenaClase();
 
-            if (PersonasBll.Guardar(persona))
+            if (EstudianteBll.Guardar(persona))
                 MessageBox.Show("Ha ingresado un Estudiante!");
 
         }
@@ -44,7 +44,7 @@ namespace Formulario
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Consultas.cPersonas cpersonas = new Consultas.cPersonas();
+            Consultas.cEstudiante cpersonas = new Consultas.cEstudiante();
             cpersonas.Show();
         }
 

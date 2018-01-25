@@ -55,7 +55,7 @@
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(86, 30);
-            this.Eliminarbutton.TabIndex = 13;
+            this.Eliminarbutton.TabIndex = 11;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.UseVisualStyleBackColor = true;
             // 
@@ -65,7 +65,7 @@
             this.Guardarbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(86, 30);
-            this.Guardarbutton.TabIndex = 11;
+            this.Guardarbutton.TabIndex = 9;
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.UseVisualStyleBackColor = true;
             this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
@@ -86,11 +86,11 @@
             this.NombrestextBox.Margin = new System.Windows.Forms.Padding(2);
             this.NombrestextBox.Name = "NombrestextBox";
             this.NombrestextBox.Size = new System.Drawing.Size(284, 20);
-            this.NombrestextBox.TabIndex = 8;
+            this.NombrestextBox.TabIndex = 2;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(324, 28);
+            this.button2.Location = new System.Drawing.Point(341, 24);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(62, 36);
@@ -104,7 +104,7 @@
             this.button3.Location = new System.Drawing.Point(181, 277);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(86, 30);
-            this.button3.TabIndex = 17;
+            this.button3.TabIndex = 10;
             this.button3.Text = "Modificar";
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -124,7 +124,7 @@
             this.MontotextBox.Margin = new System.Windows.Forms.Padding(2);
             this.MontotextBox.Name = "MontotextBox";
             this.MontotextBox.Size = new System.Drawing.Size(284, 20);
-            this.MontotextBox.TabIndex = 18;
+            this.MontotextBox.TabIndex = 4;
             // 
             // label3
             // 
@@ -142,7 +142,7 @@
             this.BalancetextBox.Margin = new System.Windows.Forms.Padding(2);
             this.BalancetextBox.Name = "BalancetextBox";
             this.BalancetextBox.Size = new System.Drawing.Size(284, 20);
-            this.BalancetextBox.TabIndex = 20;
+            this.BalancetextBox.TabIndex = 5;
             // 
             // label4
             // 
@@ -160,7 +160,7 @@
             this.ObservacionestextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ObservacionestextBox.Name = "ObservacionestextBox";
             this.ObservacionestextBox.Size = new System.Drawing.Size(284, 20);
-            this.ObservacionestextBox.TabIndex = 22;
+            this.ObservacionestextBox.TabIndex = 6;
             // 
             // label5
             // 
@@ -177,7 +177,7 @@
             this.TId.Margin = new System.Windows.Forms.Padding(2);
             this.TId.Name = "TId";
             this.TId.Size = new System.Drawing.Size(127, 20);
-            this.TId.TabIndex = 25;
+            this.TId.TabIndex = 7;
             // 
             // Descript
             // 
@@ -185,7 +185,7 @@
             this.Descript.Margin = new System.Windows.Forms.Padding(2);
             this.Descript.Name = "Descript";
             this.Descript.Size = new System.Drawing.Size(153, 20);
-            this.Descript.TabIndex = 26;
+            this.Descript.TabIndex = 8;
             // 
             // InscIdTextBox
             // 
@@ -193,7 +193,7 @@
             this.InscIdTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.InscIdTextBox.Name = "InscIdTextBox";
             this.InscIdTextBox.Size = new System.Drawing.Size(284, 20);
-            this.InscIdTextBox.TabIndex = 27;
+            this.InscIdTextBox.TabIndex = 1;
             // 
             // label6
             // 
@@ -211,7 +211,7 @@
             this.EstIdTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.EstIdTextBox.Name = "EstIdTextBox";
             this.EstIdTextBox.Size = new System.Drawing.Size(284, 20);
-            this.EstIdTextBox.TabIndex = 29;
+            this.EstIdTextBox.TabIndex = 3;
             // 
             // label7
             // 
@@ -227,7 +227,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 319);
+            this.ClientSize = new System.Drawing.Size(422, 331);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.EstIdTextBox);
             this.Controls.Add(this.label6);
@@ -249,7 +249,7 @@
             this.Controls.Add(this.NombrestextBox);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "rPersonas";
-            this.Text = "Personas";
+            this.Text = "Inscripciones";
             this.Load += new System.EventHandler(this.rPersonas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,6 +1,6 @@
 ﻿namespace Formulario.Consultas
 {
-    partial class cPersonas
+    partial class cEstudiante
     {
         /// <summary>
         /// Required designer variable.

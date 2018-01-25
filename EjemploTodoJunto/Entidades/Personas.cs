@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Formulario
 {
-    public class Personas
+    public class Estudiante
     {
         [Key]
         public int EstudianteId { get; set; }
@@ -18,7 +18,7 @@ namespace Formulario
         public int TipoId { get; set; }
         public string TelDescript { get; set; }
 
-        public Personas()
+        public Estudiante()
         {
             this.EstudianteId = 0;
             this.Nombre = string.Empty;
@@ -30,7 +30,7 @@ namespace Formulario
             this.TelDescript = string.Empty;
         }
 
-        public Personas(int personaId, string nombres, int InscripcionID, int Monto, string Observaciones, int Balance, int TipoId, string TelDescript)
+        public Estudiante(int personaId, string nombres, int InscripcionID, int Monto, string Observaciones, int Balance, int TipoId, string TelDescript)
         {
             this.EstudianteId = personaId;
             this.Nombre = nombres;

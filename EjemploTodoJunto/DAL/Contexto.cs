@@ -10,7 +10,7 @@ namespace Formulario
     /// </summary>
     public class Contexto : DbContext
     {
-        public DbSet<Personas> Persona { get; set; }
+        public DbSet<Estudiante> Persona { get; set; }
 
         public Contexto() : base("ConStr")
         {

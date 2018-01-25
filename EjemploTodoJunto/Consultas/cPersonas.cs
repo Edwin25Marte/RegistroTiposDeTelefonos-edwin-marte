@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Formulario.Consultas
 {
-    public partial class cPersonas : Form
+    public partial class cEstudiante : Form
     {
-        public cPersonas()
+        public cEstudiante()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Formulario.Consultas
                 int id = 0;
                 int.TryParse(CriteriotextBox.Text, out id);
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.InscripcionID == id);
+                PersonasdataGridView.DataSource = EstudianteBll.GetList(es => es.InscripcionID == id);
             }
 
             if (FiltrarcomboBox.SelectedIndex == 1)
@@ -32,14 +32,14 @@ namespace Formulario.Consultas
                 
                 String s = CriteriotextBox.Text;
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Nombre == s);
+                PersonasdataGridView.DataSource = EstudianteBll.GetList(es => es.Nombre == s);
             }
             if (FiltrarcomboBox.SelectedIndex == 2)
             {
                 int esId = 0;
                 int.TryParse(CriteriotextBox.Text, out esId);
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.EstudianteId == esId);
+                PersonasdataGridView.DataSource = EstudianteBll.GetList(es => es.EstudianteId == esId);
             }
 
             if (FiltrarcomboBox.SelectedIndex == 3)
@@ -48,7 +48,7 @@ namespace Formulario.Consultas
                 int monto = 0;
                 int.TryParse(CriteriotextBox.Text, out monto);
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Monto == monto);
+                PersonasdataGridView.DataSource = EstudianteBll.GetList(es => es.Monto == monto);
             }
 
             if (FiltrarcomboBox.SelectedIndex == 4)
@@ -57,28 +57,28 @@ namespace Formulario.Consultas
                 int balance = 0;
                 int.TryParse(CriteriotextBox.Text, out balance);
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Balance == balance);
+                PersonasdataGridView.DataSource = EstudianteBll.GetList(es => es.Balance == balance);
             }
 
             if (FiltrarcomboBox.SelectedIndex == 5)
             {
                 String Obser = CriteriotextBox.Text;
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.Observaciones == Obser);
+                PersonasdataGridView.DataSource = EstudianteBll.GetList(es => es.Observaciones == Obser);
             }
             if (FiltrarcomboBox.SelectedIndex == 6)
             {
                 int Tid = 0;
                 int.Parse(CriteriotextBox.Text);
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.TipoId == Tid);
+                PersonasdataGridView.DataSource = EstudianteBll.GetList(es => es.TipoId == Tid);
             }
             if (FiltrarcomboBox.SelectedIndex == 7)
             {
 
                 String des = CriteriotextBox.Text;
 
-                PersonasdataGridView.DataSource = PersonasBll.GetList(es => es.TelDescript == des);
+                PersonasdataGridView.DataSource = EstudianteBll.GetList(es => es.TelDescript == des);
             }
         }
 

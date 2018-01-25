@@ -65,12 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\PersonasBLL.cs" />
+    <Compile Include="BLL\EstudianteBLL.cs" />
     <Compile Include="Consultas\cPersonas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultas\cPersonas.Designer.cs">
       <DependentUpon>cPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\tTelefonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\tTelefonos.Designer.cs">
+      <DependentUpon>tTelefonos.cs</DependentUpon>
     </Compile>
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="rPersonas.cs">
@@ -84,6 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Consultas\cPersonas.resx">
       <DependentUpon>cPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\tTelefonos.resx">
+      <DependentUpon>tTelefonos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rPersonas.resx">
       <DependentUpon>rPersonas.cs</DependentUpon>
